@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project4</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<div class="main-overlay"></div>
+		<div class="main-text">
+			<h1>Geek book</h1>
+			<span>Become a part of something Marvelous!</span>
+		</div>
+	</div>
+	<div class="tablet">
+		<div class="table-header">
+			<span>your own choice</span>
+			<h2>ComicsBook</h2>	
+			<p>We have a lot of comics.</p>
+		</div>
+	  <div class="car-tags">
+		 <div class="price-tag">
+		 	<img src="image/a1_ultimate.jpg" alt="" width="200px" height="250px">
+		 	<h4>Marvel.Avengers:Ultimate</h4>
+		 	<p>A new look at the history of the avengers!</p>
+		 </div>
+		 <div class="price-tag">
+		 	<img src="image/invincible.jpg" alt="" width="200px" height="250px">
+		 	<h4>Marvel.Invincible Iron Man</h4>
+		 	<p>Immerse yourself in the amazing history of iron man.</p>
+
+		 </div>
+		 <div class="price-tag">
+		 	<img src="image/batman.jpg" alt="" width="200px" height="250px">
+		 	<h4>DC.Batman Rebirth.</h4>
+		 	<p>New details about the famous superhero - Batman.</p>
+
+		 </div>
+		 <div class="price-tag">
+		 	<img src="image/superman.jpg" alt="" width="200px" height="200px">
+		 	<h4>DC.Superman.</h4>
+		 	<p>Man of steel.</p>
+
+		 </div>
+		 <div class="price-tag">
+		 	<img src="image/spider.jpg" alt="" width="200px" height="200px">
+		 	<h4>Marvel.Spider-man.</h4>
+		 	<p>Story about Peter Parker.</p>
+
+		 </div>
+		 <div class="price-tag">
+		 	<img src="image/cap.jpg" alt="" width="200px" height="250px">
+		 	<h4>Marvel.Captain America.</h4>
+		 	<p>The story about first avenger.</p>
+		 </div>
+     	</div>
+   </div>
+ <div class="cont"> <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="image/num1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="image/num2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="image/num3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="image/num4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="image/num5.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="image/num6.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:left">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}</script>
+</div>
+<div class="zebra">
+	<div class="zebra-header">
+		<h2>Others</h2>	
+		<p>Comics for every taste.</p>
+  	</div>
+  	<div class="zebra-text">
+  		<span id="dots"></span><div id="more">
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>Comics</th>
+      <th>Cost</th>
+    </tr>
+    <tr>
+      <td>Avengers:Ultimate</td>
+      <td>$75</td>
+    </tr>
+    <tr>
+      <td>Invincible Iron Man</td>
+      <td>$90</td>
+    </tr>
+    <tr>
+      <td>Batman Rebirth</td>
+      <td>$70</td>
+    </tr>
+    <tr>
+      <td>Superman</td>
+      <td>$85</td>
+    </tr>
+    <tr>
+      <td>Spider-man</td>
+      <td>$95</td>
+    </tr>
+    <tr>
+      <td>Captain America</td>
+      <td>$55</td>
+    </tr>
+  </table>
+</div></div>
+  		<button onclick="myFunction()" id="myBtn">Read more</button>
+  </div>
+	<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  	</div>
+
+<div class="google-app">
+	<div class="google-app-overlay"></div>
+	<div class="app">
+		<div class="app-map-form">
+			<div id="map"></div>
+			<script>
+				function initMap(){
+					var uluru = {lat: 49.836957, lng: 24.033618};
+					var map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: uluru});
+					var marker = new google.maps.Marker({position: uluru, map: map});
+				}
+			</script>
+			<script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXtA64VOlkv9YU90MpFAFOOUh9qjDtM3U&callback=initMap">
+            </script>
+		</div>
+		<div class="app-map-form">
+			<div id="app-form">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtIj0_5EsABzTiEfx-pvW26MxNbKl2WpycamVfjOSS9R3OMg/viewform?usp=sf_link" width="500" height="550" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="social">
+		<a href="https://www.facebook.com/100019176043978" class="fa fa-facebook"></a>
+        <a href="https://github.com/PavloShymanskyj" class="fa fa-github"></a>
+        <a href="https://www.instagram.com/shymanskyi.p/" class="fa fa-instagram"></a>
+	</div>
+</footer>
+</body>
+</html>`
