@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138868346-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138868346-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jQuery.com/jQuery-1.7.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Project 5</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-targer="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#zebra">Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#flex-boxes">Flex-boxes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#readMore">Read more</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">It's me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/num1.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="img/num2.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="img/num3.jpg">
+            </div>
+        </div>
+    </div>
+    <!--- Zebra table -->
+    <a name="zebra"></a>
+    <div class="container">
+        <div class="zebra">
+            <h1>Looks</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Comics</th>
+                        <th scope="col">Costs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Avengers:Ultimate</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Invincible Iron Man</td>
+                        <td>$90</td>
+                    </tr>
+                    <tr>
+                        <td>Batman Rebirth</td>
+                        <td>$70</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--- Flex-box -->
+    <a name="flex-boxes"></a>
+    <div class="container">
+        <div class="flex-boxes">
+            <h1>Flex-boxes</h1>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+            </div>
+        </div>
+    </div>
+       <!--- About Me -->
+    <a name="aboutMe"></a>
+    <div class="container">
+        <div class="about-me">
+            <h1>Hello,it`s me</h1>
+            <img src="img/me.jpg" class="img-circle img-responsive">
+            <p>Pavlo <br> 19 years old <br> 
+        </div>
+    </div>
+    <!--- Read more -->
+    <a name="readMore"></a>
+    <div class="text-box">
+        <h1>Read more</h1>
+        <p>Open<span id="dots">...</span><span id="more">Close <br>
+                <img src="img/num1.jpg">
+                <br>
+            </span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+    <!--- Contac Us / Google Maps -->
+    <a name="contactUs"></a>
+    <div class="row">
+        <div class="col-lg-6 col-sm-6">
+            <h1>Contact us</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtIj0_5EsABzTiEfx-pvW26MxNbKl2WpycamVfjOSS9R3OMg/viewform?usp=sf_link"  style="width:100%; height:450px;" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+            <h1>Google Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19433.139683504334!2d24.016265624406792!3d49.83143371144748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7a31f0dccd%3A0x9869cc7025bc8e3f!2z0JvRjNCy0ZbQstGB0YzQutCwINC_0L7Qu9GW0YLQtdGF0L3RltC60LA!5e0!3m2!1suk!2sua!4v1554051483884!5m2!1suk!2sua" style="width:100%; height:450px;"></iframe></p>
+        </div>
+    </div>
+ 
+    <!--- JS Validation -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>JS Validation</h1>
+                <p>Input a number between 1 and 10:</p>
+                <input id="numb">
+                <button type="button" onclick="Validation()">Submit</button>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </div>
+    <!--- Drag and drop -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Drag and drop</h1>
+                <p>Drag the image back and forth between the two div elements.</p>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="img/superman.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="225" height="125">
+                </div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+    </div>
+    <!--- HTML Web Storage -->
+    <div class="container-fluid">
+        <div class="text-center">
+            <h1>HTML Web Storage</h1>
+            <form name="form1">
+                <input type="text" name="text1" placeholder="Enter text...">
+                <br>
+                <input type="text" name="text2" placeholder="Enter text...">
+                <br>
+                <input type="text" name="text3" placeholder="Enter text...">
+                <br>
+                <input type="button" value="Assign values" onClick="AssignValues()">
+                <br>
+                <input type="button" value="Show value 1" onClick="Value1()">
+                <br>
+                <input type="button" value="Show value 2" onClick="Value2()">
+                <br>
+                <input type="button" value="Show value 3" onClick="Value3()">
+                <br>
+                <input type="button" value="Remove value 1" onClick="Delete1()">
+                <br>
+                <input type="button" value="Remove value 2" onClick="Delete2()">
+                <br>
+                <input type="button" value="Remove value 3" onClick="Delete3()">
+                <br>
+                <input type="button" value="Clear storage" onClick="ClearStorage()">
+            </form>
+        </div>
+    </div>
+    <!--- Web worker -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Web worker</h1>
+                <p>Count numbers: <output id="result"></output></p>
+                <button onclick="startWorker()">Start Worker</button>
+                <button onclick="stopWorker()">Stop Worker</button>
+            </div>
+        </div>
+    </div>
+    <!--- AJAX -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>AJAX</h1>
+                <div class="ajax_container">
+                    <h2 id="blue" class="ajax_item">test_url: https://httpbin.org/get</h2>
+                    <form class="ajax_item" name="ajax_form">
+                        Endpoint: <input id="data_url" type="text" name="data_url" value="https://httpbin.org/get">
+                    </form>
+                    <div class="ajax_item">
+                        <a class="waves-effect waves-light btn" onclick="get_ajax('text')"><button>Request_text</button></a>
+                        <a class="waves-effect waves-light btn" onclick="get_ajax('status')"><button>Request_status</button></a>
+                        <a class="waves-effect waves-light btn" onclick="get_ajax('headers')"><button>Request_headers</button></a>
+                    </div>
+                    <div class="ajax_item" id="aj_cont"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- JQuery Hide/Show FadeIn/Out -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-6">
+                <h1>JQuery Hide/Show</h1>
+                <div>
+                    <button id="hide" style="margin-bottom: 10px">Hide</button>
+                    <button id="show" style="margin-bottom: 10px">Show</button>
+                </div>
+                <img id="toggle" src="img/num5.jpg">
+            </div>
+            <div class="col-6">
+                <h1>JQuery FadeIn/Out</h1>
+                <div>
+                    <button id="fadeIn" style="margin-bottom: 10px">FadeIn</button>
+                    <button id="fadeOut" style="margin-bottom: 10px">FadeOut</button>
+                </div>
+                <img id="toggle1" src="img/num4.jpg">
+            </div>
+        </div>
+    </div>
+    <!--- JQuery Slide Animate -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-6">
+                <h1>JQuery Slide</h1>
+                <div>
+                    <button id="flip" style="margin-bottom: 10px">Click to slide the image</button>
+                </div>
+                <img id="panel" src="img/num6.jpg">
+            </div>
+            <div class="col-6">
+                <h1>JQuery Animate</h1>
+                <div>
+                    <button id="animate" style="margin-bottom: 10px">Animate</button>
+                </div>
+                <img id="animate1" src="img/num3.jpg">
+            </div>
+        </div>
+    </div>
+    <!--- JQuery Stop Callback -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-6">
+                <h1>JQuery Stop</h1>
+                <div>
+                    <button id="stop" style="margin-bottom: 10px">Click to stop the animation</button>
+                    <button id="start" style="margin-bottom: 10px">Click to start the animation</button>
+                </div>
+                <img id="stop1" src="img/num1.jpg">
+            </div>
+            <div class="col-6">
+                <h1>JQuery Callback</h1>
+                <div>
+                    <button id="callback" style="margin-bottom: 10px">Callback</button>
+                </div>
+                <img id="callback1" src="img/num3.jpg">
+            </div>
+        </div>
+    </div>
+    <!--- JQuery Stop Callback -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>JQuery Chaining</h1>
+                <div>
+                    <button id="chain" style="margin-bottom: 10px">Start chaining</button>
+                </div>
+                <img id="chain1" src="img/num1.jpg">
+            </div>
+        </div>
+    </div>
+    <!--- jQuery + AJAX + JSON -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>jQuery + AJAX + JSON</h1>
+                <div class="json_content">
+                    <a id="get_ip"><button style="margin-bottom: 10px">Get IP</button></a>
+                    <div id="ip_div"></div>
+                    <a id="get_headers"><button style="margin-bottom: 10px">Get headers</button></a>
+                    <div id="headers_div"></div>
+                    <a id="get_date"><button style="margin-bottom: 10px">Get date</button></a>
+                    <div id="date_div"></div>
+                    <a id="get_echo"><button style="margin-bottom: 10px">Get echo</button></a>
+                    <div id="echo_div"></div>
+                    <a id="get_valid"><button style="margin-bottom: 10px">Get validation</button></a>
+                    <div id="valid_div"></div>
+                    <a id="get_js_code"><button style="margin-bottom: 10px">Get js_code</button></a>
+                    <div id="js_code_div"></div>
+                    <a id="get_md5"><button style="margin-bottom: 10px">Get md5</button></a>
+                    <div id="md5_div"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Footer -->
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Social networks</h1>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.facebook.com/100019176043978"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/PavloShymanskyj"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/shymanskyi.p/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Db6lkBRaCVgWwgP5DsVIbcjthSUQl7s&callback=myMap"></script>
+   
+</body>
+
+</html>
