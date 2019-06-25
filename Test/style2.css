@@ -1,0 +1,145 @@
+.inactive{
+    display: none
+}
+
+.style-img{
+  width: 5%;
+  margin-left: 90%;
+  margin-top:2%;
+}
+
+body{
+	background-image: url(games.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#main{
+	background: rgba(50,150,150,0.7);
+	width:80%;
+	margin: 10%;
+	margin-bottom: 0;
+  	margin-top: 5%;
+	padding: 1%;
+	font-size: 1.20em;
+	font-style: oblique;
+}
+
+em{
+	font-style: normal;
+}
+
+a{
+	color: #640770;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 0.75em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-image: url(num1.jpg);
+  background-size: cover;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.button:hover {opacity: 1}
+
+.button:active {
+  opacity: 1;
+  transform: translateY(4px);
+}
+
+
+.rounded{
+	border-radius: 15px;
+}
+
+
+.comment{
+	background: rgba(211,14,0,0.1);
+	border: 2px groove white;
+	padding: 1% 2% 4.5%;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: Segoe Script, cursive;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Segoe Script, cursive;
+}
+
+
+input[type=submit] {
+  float: right;
+  box-shadow: none;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  font-family: Segoe Script, cursive;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) { 
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#myCanvas{
+	width: 60%;
+	height: 200px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#myCanvas2{
+	margin-left: 30%;
+	width: 35%
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 2%;
+  z-index: 99;
+  box-shadow: none;
+  font-size: 0.9em;
+}
+
